@@ -1,5 +1,7 @@
 class Solution {
 public:
+//t(n)=O(N^2)
+//SPACE() = O(1) inplace in the matrix itself
     void rotate(vector<vector<int>>& matrix) {
         int n=matrix.size(); //compute size of matrix
         //to transpose we use this kind of looping structure

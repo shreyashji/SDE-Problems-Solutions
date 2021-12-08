@@ -1,5 +1,7 @@
 class Solution {
 public:
+//Time = O(N)
+//space = O(N)
     vector<vector<int>> generate(int numRows) {
     vector<vector<int>> r(numRows);// create n dynamic vector which will be empty after that
     // we know we have to genrate n rows

@@ -18,7 +18,8 @@ public:
 #include<iostream>
 #include<climits>
 using namespace std;
- 
+//time= O(N)
+//space= O(1)
 int maxSubArraySum(int a[], int size)
 {
     int max_so_far = INT_MIN, max_ending_here = 0;

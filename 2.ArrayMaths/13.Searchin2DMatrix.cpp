@@ -22,6 +22,8 @@
                 i++;
         }
 */
+//t(n)= log base 2 (n*m)
+//space = O(1)
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {

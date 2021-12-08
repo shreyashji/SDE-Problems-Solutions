@@ -1,8 +1,11 @@
 class Solution {
 public:
+// moore vooting algo used
+//t(n)= o(n)
+//space() = O(1)
     int majorityElement(vector<int>& nums) {
         int count=0;      //init count as 0
-        int candidate=0;  //init candidate or element as 0 
+        int candidate=0;  //init candidate as 0
         
         for(int num:nums){ //iterate over the data structure nums
             if(count==0){  //if count =0  ,we initilize candidate as num

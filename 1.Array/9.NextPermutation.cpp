@@ -1,5 +1,7 @@
 class Solution {
 public:
+// Time = O(N)
+// Space= O(1) inplace
     void nextPermutation(vector<int>& nums) {
         int n=nums.size(),k,l; //find the size of the array initially,then wee need to find the breakpoint of so we can say that the first breakpoint will be at the 2nd last index,breakpoint is k
         

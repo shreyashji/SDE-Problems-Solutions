@@ -1,5 +1,7 @@
 class Solution {
 public:
+//time= O(n*m)
+//Space = O(1) inplace
     void setZeroes(vector<vector<int>>& matrix) { //2d matrix
     //calculate no. of rows
     //calculate any of the rows and calulate row size

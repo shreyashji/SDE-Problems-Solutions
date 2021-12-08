@@ -13,6 +13,8 @@ so to optimize it using merge sort technique
 merge sort  is  break in half until all of thenm reach a single element
 
 */
+//T(N)= nlogn (merge sort)
+//space= O(N) (merging required this)
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;

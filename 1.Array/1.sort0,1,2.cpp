@@ -3,6 +3,8 @@ using namespace std;
 
 class Solution {
 public :
+//time= O(n)
+//space= O(1)
     void sortColors(vector<int>& nums){
         int lo=0;
         int hi=nums.size()-1;

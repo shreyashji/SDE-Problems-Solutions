@@ -32,7 +32,8 @@ we get 5 10 12 18 20.
 
 #include<bits/stdc++.h>
 using namespace std;
-
+//time = O(n*m)
+//space= O(1)
 class Solution{
 public:
 void merge(long long arr1[], long long arr2[], int n, int m) {  

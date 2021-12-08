@@ -1,5 +1,8 @@
 class Solution {
 public:
+//time = O(nlogn)
+//space = O(N)
+
     vector<vector<int>> merge(vector<vector<int>>& intervals) { //we are returning vectors of vectors
         //we solved with using vectors of pairs
         vector<vector<int>> mergedintervals; // our empty data structure or our answer that willreturn 

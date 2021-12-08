@@ -1,5 +1,7 @@
 class Solution {
 public:
+//time = O(N)
+//space = O(1)
     int findDuplicate(vector<int>& nums) {
         int slow=nums[0];
         int fast=nums[0];

@@ -1,5 +1,6 @@
 // n can be -ive or not ,if yes then then we need to handle some edge cases
-
+//T(n)=log base 2 N
+//space= O(1)
 class Solution {
 public:
     double myPow(double x, int n) {
