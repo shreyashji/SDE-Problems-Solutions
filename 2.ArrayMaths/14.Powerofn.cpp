@@ -13,7 +13,7 @@ public:
             }
         else{
             x=x*x; //if even power x * by itself
-            nn=nn/2;  //and nn dive by 2
+            nn=nn/2;  //and nn divede by 2
         }
     }
         //check for value of n 
