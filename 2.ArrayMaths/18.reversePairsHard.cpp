@@ -1,31 +1,36 @@
-/*class Solution {
+class Solution {
 public:
-    int merge(vector<int>& nums, int low, int mid, int high){
+    int merge(vector<int> &nums, int low, int mid, int high) {
         //low - starting point of the left half of the array
         //mid+1 - starting point of the right half of the array
-        int cnt=0; //store total no. of pairs
+        int cnt=0; /*store total no. of pairs*/
         int j=mid+1; //take j ptrs and put it in the first index of right half that is mid+1
         //iterate i on left half , i from low to mid ,that is left half of the array
-        for(i=low ; i<=mid+1; i++){
-            while(j<=high && nums[i] > 2LL * nums[j]) //keep moving j ptrs to every i
+        for(int i=low ; i<=mid+1; i++){
+            while(j<=high && nums[i] > 2LL * nums[j]) { 
+                //keep moving j ptrs to every i
                 j++;
         }
-        cnt += (j - (mid+1)); //count no. of elemnts in the eft,that will contribute to the no. of pairs of the ith index elemnt =no of elemnts in the left       
+//count no. of elemnts in the eft,that will contribute to the no. of pairs of the ith index elemnt =no of elemnts in the left 
+        cnt += (j - (mid+1)); 
     }
+    
     //till here done total no. of inversion of left half and right half of array together
-    // now need to do merge function
+    //now need to do merge function
     vector<int> temp; 
     int left = low, right=mid+1;
     //iterating till anyone get exhausted
-    while(left <= mid && right <= high) {  
+    while(left <= mid && right <= high){  
         if(nums[left] <= nums[right]){ 
         //if left portion is smaller ,push it into temp & inc left  ptr by 1
             temp.push_back(nums[left++]);
         }
-        else{// if right half is smaller addthem to  temp ds ,and move right by one
+        else{
+            //if right half is smaller addthem to  temp ds ,and move right by one
             temp.push_back(nums[right++]);
         }
-    } // till this one of the array is exhausted
+    } 
+    // till this one of the array is exhausted
     
     //if left array is left out,adding all the remaining elemnt in temp vector
     while(left<=mid){
@@ -40,13 +45,12 @@ public:
     }
     return cnt;
 }
-    
-    mergesort(vector<int>& nums,int low ,int high){
-        if(low==high) return; //check if single element
+int mergeSort(vector<int>& nums,int low ,int high){
+        if(low>=high) return 0; //check if single element
         int mid = (low+high)/2; //compue middle
         int inv = mergeSort(nums,low,mid); //call left recursion
-        inv+ = mergeSort(nums,low,mid+1); //call right recursion
-        inv+ = merge(nums,low,mid,high);  //after this merge,tis will compute numbers of pairs as well as merge left sorted arr and right sorted array
+        inv += mergeSort(nums,mid+1,high); //call right recursion
+        inv += merge(nums,low,mid,high);  //after this merge,tis will compute numbers of pairs as well as merge left sorted arr and right sorted array 
         return inv;
     }
     
@@ -54,7 +58,8 @@ public:
         return mergeSort(nums,0,nums.size()-1);
     }
 };
-*/
+
+/**/
 #include<bits/stdc++.h>
 
 using namespace std;
