@@ -8,6 +8,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+//time= O(N)
+//space=O(1)
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
