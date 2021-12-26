@@ -6,6 +6,8 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+//time = ~near about O(n) 
+// space = o(1)
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
