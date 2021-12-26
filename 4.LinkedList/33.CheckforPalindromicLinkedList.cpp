@@ -24,9 +24,9 @@ public:
             fast = fast->next->next;
         }
         //finding middle of ll till here
-        //from ere slow will be at middle 
+        //from here slow will be at middle 
         slow->next= reverseList(slow->next); //reverse right half of slow
-        slow = slow->next;//moves low,pointing to first position of right half
+        slow = slow->next;//moves slow,pointing to first position of right half
         
         while(slow !=NULL){
             //start moving slow and head
@@ -41,7 +41,7 @@ public:
     //reverse linked list node
     ListNode* reverseList(ListNode* head) {
         ListNode *pre = NULL; 
-        ListNode *next = NULL;//DUMMY NODE
+        ListNode *next = NULL;
         while(head!=NULL){ //traverse till head not equals to null
             next = head->next;//we take our next and pointed to the immediate next of head
             head->next = pre; //broke the link and pointed to the dummy node,
