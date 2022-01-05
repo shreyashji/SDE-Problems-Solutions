@@ -9,7 +9,7 @@ int main() {
   int coins[] = {1, 2, 5, 10, 20, 50, 100, 500, 1000};
   int n = 9; //size of arr
   for (int i = n - 1; i >= 0; i--) {  //start iterating from back 
-    while (V >= coins[i]) { //if denomination coin is lesser than the current value tha we have
+    while (V >= coins[i]) { //if denomination coin is lesser than the current value that we have
       V -= coins[i]; //subtracting and whatever adding denomination count taking of adding into combination
       ans.push_back(coins[i]);
     }
