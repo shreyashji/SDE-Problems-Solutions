@@ -1,6 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
+        "*.ejs": "html",
         "exception": "cpp",
         "ios": "cpp",
         "istream": "cpp",
@@ -11,6 +12,8 @@
         "tuple": "cpp",
         "utility": "cpp",
         "xiosbase": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "initializer_list": "cpp",
+        "xutility": "cpp"
     }
 }
