@@ -1,8 +1,8 @@
 class Solution {
 public:
 //not efficient
-//time 
-//space 
+//time = O( N^3 ) 
+//space = O( N^3 ) 
     bool isSafe1(int row, int col, vector<string> board, int n) {
         // check upper diagonal ,upwards  \
         int duprow = row;
