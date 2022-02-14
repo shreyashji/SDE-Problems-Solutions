@@ -12,6 +12,7 @@ bool isSafe(int node, int color[], bool graph[101][101], int n, int col) {
   }
   return true;//none of the adjacent node was having the same color col
 }
+
 bool solve(int node, int color[], int m, int N, bool graph[101][101]) { //recursive function
   if (node == N) { //if colored n nodes return true
     return true;
