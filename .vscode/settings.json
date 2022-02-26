@@ -14,6 +14,8 @@
         "xiosbase": "cpp",
         "xstring": "cpp",
         "initializer_list": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "compare": "cpp",
+        "xstddef": "cpp"
     }
 }
