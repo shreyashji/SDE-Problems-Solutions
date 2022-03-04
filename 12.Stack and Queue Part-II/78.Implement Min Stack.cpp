@@ -3,7 +3,7 @@ class MinStack {
     long long mini; 
 public:
 //time=O(1)
-//space =O(N) storing single elemnt in stack
+//space =O(N) storing single elemnt in stack,just doing twice  of thats
     /** initialize your data structure here. */
     MinStack() {
         while(st.empty() == false) st.pop(); 
