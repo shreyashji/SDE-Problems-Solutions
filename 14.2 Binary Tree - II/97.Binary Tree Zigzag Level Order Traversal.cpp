@@ -25,7 +25,8 @@ vector < vector < int >> zigzagLevelOrder(Node * root) {
       nodesQueue.pop();
 
       // find position to fill node's value
-      int index = (leftToRight) ? i : (size - 1 - i);//if true put 2,3(push from front) it in ds ,if false put 3,2(push from back)
+      int index = (leftToRight) ? i : (size - 1 - i);//if true put 2,3(push from front) it in ds ,
+      //if false put 3,2(push from back)
 
       row[index] = node -> val;
       if (node -> left) {
@@ -36,7 +37,7 @@ vector < vector < int >> zigzagLevelOrder(Node * root) {
       }
     }
     // after this level
-    leftToRight = !leftToRight;
+    leftToRight = !leftToRight; //switch on the flags 
     result.push_back(row);
   }
   return result;
