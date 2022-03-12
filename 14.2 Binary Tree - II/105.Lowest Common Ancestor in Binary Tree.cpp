@@ -18,7 +18,7 @@ public:
         }
         TreeNode* left = lowestCommonAncestor(root->left, p, q);
         TreeNode* right = lowestCommonAncestor(root->right, p, q);
-
+ 
         //result,while comning back
         if(left == NULL) { //if left appears null,i take right guy
             return right;
