@@ -21,7 +21,7 @@ void reorder(BinaryTreeNode < int > * root) {
     
     int tot = 0; 
     if(root->left) tot += root->left->data;  //when come back simply sum left & right //and assign it to root
-    if(root->right) tot+= root->right->data; 
+    if(root->right) tot += root->right->data; 
     if(root->left or root->right) root->data = tot;  //check if its not leaf node,if its not leaf then only update the upper guy
     //when move up,backtrack,reupdate the roots value
 }
