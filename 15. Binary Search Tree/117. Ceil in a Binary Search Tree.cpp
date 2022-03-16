@@ -1,5 +1,6 @@
  int findCeil(BinaryTreeNode<int> *root, int key){
-
+    //time = O(lo bas 2 N) traversal time height of bst,worst case leaf node
+    //space = O(1)
 	int ceil = -1; 
     while (root) {
 
