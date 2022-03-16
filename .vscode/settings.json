@@ -17,6 +17,7 @@
         "xutility": "cpp",
         "compare": "cpp",
         "xstddef": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "cmath": "cpp"
     }
 }
