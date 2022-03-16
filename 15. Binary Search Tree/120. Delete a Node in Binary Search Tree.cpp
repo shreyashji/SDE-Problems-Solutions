@@ -17,14 +17,14 @@ public:
         if (root == NULL) {
             return NULL;
         }
-        if (root->val == key) {
+        if (root->val == key) {//if we have to delet root
             return helper(root);
         }
-        TreeNode *dummy = root;
+        TreeNode *dummy = root;//store root coz it will destroy when traversed
         while (root != NULL) {
             if (root->val > key) {
                 if (root->left != NULL && root->left->val == key) {
-                    root->left = helper(root->left); //move root
+                    root->left = helper(root->left); //when find the node ,helper function make sure connection are made in proper way
                     break;
                 } else {
                     root = root->left;
@@ -41,11 +41,11 @@ public:
         return dummy;
     }
     TreeNode* helper(TreeNode* root) {//joining right pointer 
-            if (root->left == NULL) 
+            if (root->left == NULL) //if left subtree doesnt exist return points to right subtree
             {
                 return root->right;
             } 
-            else if (root->right == NULL)
+            else if (root->right == NULL) //if right subtree doesnt exist return points to left subtree
             {
                 return root->left;
             } 
@@ -54,7 +54,7 @@ public:
             lastRight->right = rightChild;
             return root->left;
     }
-    TreeNode* findLastRight(TreeNode* root) {
+    TreeNode* findLastRight(TreeNode* root) {//got to right......
         if (root->right == NULL) {
             return root;
         }
