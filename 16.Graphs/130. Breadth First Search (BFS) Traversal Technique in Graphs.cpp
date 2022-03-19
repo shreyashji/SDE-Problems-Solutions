@@ -6,6 +6,9 @@ public:
 	    vector<int> bfs; //vector of integers,this will store traversal nodes
 	    vector<int> vis(V, 0); //created visited array of size n
 	    
+        for(int i=0; i<=V ; i++){
+            if(!vis[i]) { 
+
         queue<int> q;  //declared a queue
 	    q.push(0); //push starting node of component
 	    vis[0] = 1; //and mark as visisted
@@ -22,9 +25,12 @@ public:
 	            }
 	        }
 	    }
+    }
+}
 	    
 	    return bfs; 
 	}
+
 };
 int main(){
 	int tc;
