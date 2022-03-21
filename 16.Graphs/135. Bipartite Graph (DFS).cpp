@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 //time=O(N+E) n nodes,e e through traversing through adj nodes overall
-//space=O(N+E) adj list + O(n) color array + O(N) auxilary space
+//space=O(N+E) adj list + O(n) color array 
+//auxilary space= O(N) auxilary space
 bool bipartiteDfs(int node, vector<int> adj[], int color[]) {
     for(auto it : adj[node]) { //traverse to all its adjaacent
         if(color[it] == -1) { //if adjacent not colored
