@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+//time=O(N+E) n nodes,e e through traversing through adj nodes overall
+//space= O(N+E) adj list + O(2n) for two array + O(N) auxilary space
 class Solution {
 private:
     bool checkCycle(int node, vector < int > adj[], int vis[], int dfsVis[]) {
