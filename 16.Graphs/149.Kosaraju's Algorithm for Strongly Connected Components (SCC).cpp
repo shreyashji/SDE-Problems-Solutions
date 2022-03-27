@@ -4,7 +4,7 @@ using namespace std;
 //step 2: O(N+E) transpose the graph
 //step 3: O(N+E) dfs according to finishing time
 //over all time(c)= O(N+E)
-//space (c) = O(N+E) fro transpose graph + O(n) visited array for dfs + O(N) stack
+//space (c) = O(N+E) fro transpose graph + O(n) visited array for dfs + O(N) stack 
 void dfs(int node, stack<int> &st, vector<int> &vis, vector<int> adj[]) { //tosort dfs
     vis[node] = 1; 
     for(auto it: adj[node]) {
