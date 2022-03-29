@@ -20,6 +20,8 @@
         "type_traits": "cpp",
         "cmath": "cpp",
         "xhash": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "list": "cpp",
+        "xtree": "cpp"
     }
 }
