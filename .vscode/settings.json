@@ -19,6 +19,7 @@
         "xstddef": "cpp",
         "type_traits": "cpp",
         "cmath": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "vector": "cpp"
     }
 }

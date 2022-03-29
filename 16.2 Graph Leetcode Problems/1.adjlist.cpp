@@ -1,4 +1,5 @@
 /*
+adjacency listonly for undirected graph
 u(vertex)  v(edges)
 0-1->2
 1-2
