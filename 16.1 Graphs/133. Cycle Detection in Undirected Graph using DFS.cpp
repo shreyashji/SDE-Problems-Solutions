@@ -12,7 +12,7 @@ public:
                 if(checkForCycle(it, node, vis, adj)) //call dfs traversal
                     return true; //if cycle true
             }
-            else if(it!=parent) //if not visited,if previouslt visited node it not equal to parent
+            else if(it!=parent) //if not visited,if previous lt visited node it not equal to parent
                 return true; 
         }
         return false; //dfs call done entirely  ,false if no cycle
