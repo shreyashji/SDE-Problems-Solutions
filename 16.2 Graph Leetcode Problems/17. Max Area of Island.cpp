@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/max-area-of-island/
+//
 class Solution {
 public:
     /*
@@ -6,15 +8,15 @@ public:
     DFS,WHENEVER FOUND 1 INCREASE AREA VAR VALUE and change the 1 to 0 
     
     */
-    bool isValid(int i, int j, int n, int m, vector<vector<int>>& grid){
+    bool isValid(int i, int j, int n, int m, vector<vector<int>>& grid){//to check for e are not out of boundry
         if(i>=0 && i<n && j>=0 && j<m && grid[i][j] == 1){
             return true;
         }
         return false;
     }
     
-    void dfs(vector<vector<int>>& grid, int i, int j, int n, int m, int &area){
-        area++;
+    void dfs(vector<vector<int>>& grid, int i, int j, int n, int m, int &area){//agar refrence pass nhi kiya to har bar new variable create kar dega,har bar value 0 hi aegi phir
+        area++; //jo 1 mila ha usko area me ++ karke 0  me karenge taki dobara count na ho jae
         grid[i][j] = 0;
         
         if(isValid(i+1, j, n, m, grid)){//adhjacent 1 ko utaenge
