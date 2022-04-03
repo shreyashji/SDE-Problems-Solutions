@@ -21,6 +21,7 @@ void printf(int ind,vector<int> &ds,int arr[],int n){
     ds.push_back(arr[ind]);
     printf(ind+1,ds,arr,n);
     ds.pop_back();
+    
     //not pick or not take condition,this element is not added to our subsequence
     //put this before take or pick to get in reverse order
      printf(ind+1,ds,arr,n);

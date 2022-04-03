@@ -1,7 +1,10 @@
+///https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7
+
 #include <bits/stdc++.h>
 using namespace std;
 //printing any subsequences whose sum is k (take /not take)
 //arr[1,2,1],k=2 ->[1,1],[2]
+//cant be specific to any  sequnce,it is to avoid future calls
 bool printS(int ind,vector<int> &ds,int s,int sum,int arr[],int n){
     if(ind == n){
         //condition satisfied
@@ -18,7 +21,7 @@ bool printS(int ind,vector<int> &ds,int s,int sum,int arr[],int n){
     ds.push_back(arr[ind]);
     s += arr[ind];
     
-    if(printS(ind+1, ds, s, sum, arr, n) == true){
+    if(printS(ind+1, ds, s, sum, arr, n) == true){ //function call
         return true;
     }
     s -= arr[ind];
@@ -26,7 +29,8 @@ bool printS(int ind,vector<int> &ds,int s,int sum,int arr[],int n){
     //not pick or not take condition,this element is not added to our subsequence
     //put this before take or pick to get in reverse order
     if(printS(ind+1, ds, s, sum, arr, n) ==true ) return true;
-    return false;
+
+    return false;//if none of them return true return false
 }
 int main()
 {
