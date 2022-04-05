@@ -22,6 +22,8 @@
         "xhash": "cpp",
         "vector": "cpp",
         "list": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "algorithm": "cpp",
+        "limits": "cpp"
     }
 }
