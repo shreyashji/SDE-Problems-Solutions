@@ -43,6 +43,8 @@ int findWays(vector<int> &num, int tar)
 }
 
 //what if there are negative integers,which data structure to use
+//If there are non-negative integers and sum can also be non-negative then we can use map data structure
+
 
 //tabulation ,to remove auxilary space
 //time = O(N*sum)
@@ -90,4 +92,29 @@ int findWays(vector<int> &num, int tar)
 		prev = curr;
 	}
 	return prev[tar]; 
+}
+
+
+
+//what if array is [0,0,1] and sum=1 ,so there should be 4 subsets ideally
+
+int f(int ind, int sum,vector<int> &num){
+	
+	if(ind==0) {
+		if(sum==0 && num[0]==0) return 2; //two options tkae 0 or not take 0,2 possible wasy
+		if(sum ==0 || sum == num[0]) return 1;
+		return 0;
+	}
+	
+	int nottake = f(ind-1,sum,num);
+	int take=0;
+	if(num[ind]<=sum) take = f(ind-1,sum-num[ind],num);
+	
+	return take+nottake;
+}
+
+int findWays(vector<int> &num, int tar)
+{
+    int n = num.size();
+	return f(n-1,tar,num); 
 }
