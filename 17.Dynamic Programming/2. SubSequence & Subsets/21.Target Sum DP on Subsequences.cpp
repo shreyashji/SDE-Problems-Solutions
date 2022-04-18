@@ -1,5 +1,4 @@
 //tabulation
-
 int findWays(vector<int> &num, int tar)
 {
 	int n = num.size();
