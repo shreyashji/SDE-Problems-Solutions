@@ -101,7 +101,7 @@ int editDistance(string str1, string str2)
 	for(int j=0 ; j<=m ; j++) prev[j] = j;
 	
 	for(int i=1 ; i<=n ; i++){
-		curr[0] =i; //for everytime using curr ,we have to update its 0 th guy
+		curr[0] =i; //for everytime using curr ,always have i, or sswe have to update its 0 th guy
 		for(int j=1 ; j<=m ; j++){
 			if(str1[i-1] == str2[j-1]) 
 				curr[j] = prev[j-1];
