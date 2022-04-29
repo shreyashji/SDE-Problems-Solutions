@@ -82,7 +82,7 @@ long getMaximumProfit(long *values, int n)
 		for(long buy=0 ; buy<=1; buy++){
 			long profit = 0;	
 			if(buy){
-				profit = max(-values[ind] - ahead[0]
+				profit = max(-values[ind] + ahead[0]
 							, 0+ ahead[1]);
 			}
 			else{
