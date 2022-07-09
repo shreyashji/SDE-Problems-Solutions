@@ -53,12 +53,3 @@ void merge(long long arr1[], long long arr2[], int n, int m) {
         }
     }
 };
-
-int ar1[] = { 1, 5, 9, 10, 15, 20 };
-int ar2[] = { 2, 3, 8, 13 };
-int m = sizeof(ar1) / sizeof(ar1[0]);
-int n = sizeof(ar2) / sizeof(ar2[0]);
-merge(ar1, ar2, m, n);
-After Merging 
-First Array: 1 2 3 5 8 9 
-Second Array: 10 13 15 20 
